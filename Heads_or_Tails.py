@@ -15,7 +15,7 @@ def heads_tails():
         computer_guess=options[choice]
         user_guess=str(input("Heads or Tails"))
         if user_guess == computer_guess:
-            print(f"It was {computer_guess}, you guessed {user_guess}, you won that round".)
+            print(f"It was {computer_guess}, you guessed {user_guess}, you won that round")
             user_score +=1
         else:
             print("It was {}, you guessed {}, you lost that round".format(computer_guess,user_guess))
