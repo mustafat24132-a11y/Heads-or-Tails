@@ -33,9 +33,14 @@ first_name = input("What is your name? ").strip()
 
 # Validate first_name length and characters
 if 2 <= len(first_name) <= 10 and first_name.isalpha():
+    break
+else:
+   print('Your name must be more than 2 characters and less than 10 and contain only letters.')
     print(first_name)
 else:
-    print('Your name must be more than 2 characters and less than 10 and contain only letters.')
+ 
+    
+
 
 try:
     age = int(input("What is your age? "))
