@@ -28,12 +28,11 @@ def heads_tails():
 
 #---------------------main program-----------------------------
 print("Hi! Welcome to my Heads or Tails game")
+while True:
+    first_name = input("What is your name? ").strip()
 
-first_name = input("What is your name? ").strip()
-
-# Validate first_name length and characters
-if 2 <= len(first_name) <= 10 and first_name.isalpha():
-    break
+ if 2 <= len(first_name) <= 10 and first_name.isalpha():
+ break
 else:
    print('Your name must be more than 2 characters and less than 10 and contain only letters.')
    print(first_name)
