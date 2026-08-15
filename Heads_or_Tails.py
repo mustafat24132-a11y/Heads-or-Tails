@@ -36,7 +36,7 @@ if 2 <= len(first_name) <= 10 and first_name.isalpha():
     break
 else:
    print('Your name must be more than 2 characters and less than 10 and contain only letters.')
-    print(first_name)
+   print(first_name)
 else:
  
     
