@@ -40,10 +40,10 @@ while True:
    
  
 
-
+while True()
 try:
     age = int(input("What is your age? "))
-    # COndition to check the user's age
+    # Condition to check the user's age
     if 12 < age < 20:
         print(f"Age accepted: {age}")
     else:
