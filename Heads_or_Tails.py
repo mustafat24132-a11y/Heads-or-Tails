@@ -39,17 +39,17 @@ while True:
    
    
  
-
 while True:
     try:
-    age = int(input("What is your age? "))
-    # Condition to check the user's age
-    if 12 < age < 20:
-        print(f"Age accepted: {age}")
-    else:
-        print('You must be older than 12 and younger than 20')
-except ValueError:
-    print("Please enter a valid number for age.")
+        age = int(input("What is your age? "))
+        # Condition to check the user's age
+        if 12 < age < 20:
+            print(f"Age accepted: {age}")
+            break  # Exit the loop when age is valid
+        else:
+            print('You must be older than 12 and younger than 20')
+    except ValueError:
+        print("Please enter a valid number for age.")
 
  
 
