@@ -47,6 +47,7 @@ while True:
         if 12 < age < 20:
             print(f"Age accepted: {age}")
             break  # Exit the loop when age is valid
+        elif age == "":
         else:
             print('You must be older than 12 and younger than 20')
     except ValueError:
