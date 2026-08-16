@@ -13,7 +13,7 @@ def heads_tails():
     while user_score!=2 and computer_score!=2:
         choice=random.randint(0,1)
         computer_guess=options[choice]
-        user_guess=str(input("Heads or Tails"))
+        user_guess=str(input("Heads or Tails")).strip().lower()
         if user_guess == computer_guess:
             print(f"It was {computer_guess}, you guessed {user_guess}, you won that round")
             user_score +=1
@@ -33,6 +33,7 @@ while True:
     first_name = input("What is your name? ").strip()
 
     if 2 <= len(first_name) <= 10 and first_name.isalpha():
+        print(f"welcome {first_name}")
         break
     else:
         print("Your name must be between 2 and 10 characters and contain only letters.")
