@@ -40,7 +40,7 @@ while True:
    
  
 
-while True()
+while True ()
 try:
     age = int(input("What is your age? "))
     # Condition to check the user's age
