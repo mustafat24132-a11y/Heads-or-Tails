@@ -52,12 +52,14 @@ while True:
             print('You must enter an age to continue playing')
             continue
         # prevents the user from entering a word as their age and then asks them for a number
-       if age_input.isalpha():
-        print("You must only enter numbers and not words for this question")
-        continue
+        if age_input.isalpha():
+            print('You must only enter numbers and not words for this question')
+            continue
+        if age_input.isdigit():
+            print('No symbols should be in side the age')
         else:
             print('You must be older than 12 and younger than 20')
-    except ValueError:
+    except:
         print("Please enter a valid number for age.")
 
  
