@@ -35,6 +35,10 @@ while True:
     if 2 <= len(first_name) <= 10 and first_name.isalpha():
         print(f"welcome {first_name}")
         break
+    # this checks for any symbols in the user's name
+    if first_name_input.isdigit():
+        print('No symbols should be in your name')
+
     else:
         print("Your name must be between 2 and 10 characters and contain only letters.")
    
@@ -55,6 +59,7 @@ while True:
         if age_input.isalpha():
             print('You must only enter numbers and not words for this question')
             continue
+        # this checks if the user checks if they have symbols in their age
         if age_input.isdigit():
             print('No symbols should be in side the age')
         else:
