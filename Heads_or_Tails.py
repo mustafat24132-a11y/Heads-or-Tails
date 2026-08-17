@@ -42,13 +42,18 @@ while True:
  
 while True:
     try:
-        age = int(input("What is your age? "))
+        age = int(input("What is your age?  "))
         # Condition to check the user's age
         if 12 < age < 20:
             print(f"Age accepted: {age}")
             break  # Exit the loop when age is valid
         elif age == "":
             print('You must enter an age to continue playing')
+        elif age == "twelve, thirteen, fourteen, fifeteen, sixteen, seventeen, eighteen, nineteen":
+            
+            
+            
+
         else:
             print('You must be older than 12 and younger than 20')
     except ValueError:
