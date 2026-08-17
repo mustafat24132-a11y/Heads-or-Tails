@@ -31,7 +31,7 @@ print("Hi! Welcome to my Heads or Tails game")
 
 while True:
     first_name = input("What is your name? ").strip()
-
+     # keeps the name lenght from 2-10 no more no less
     if 2 <= len(first_name) <= 10 and first_name.isalpha():
         print(f"welcome {first_name}")
         break
@@ -46,10 +46,12 @@ while True:
         # Condition to check the user's age
         if 12 < age < 20:
             print(f"Age accepted: {age}")
-            break  # Exit the loop when age is valid
-        elif age == "":
+            break  # Exits the loop when age is valid
+        # boundary if the user enters a blank statement
+        elif age == "": 
             print('You must enter an age to continue playing')
             continue
+        # prevents the user from entering a word as their age and then asks them for a number
         elif age == "twelve, thirteen, fourteen, fifeteen, sixteen, seventeen, eighteen, nineteen":
             print('You must only enter numbers and not words for this question')
             continue
