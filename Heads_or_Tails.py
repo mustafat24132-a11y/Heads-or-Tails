@@ -49,11 +49,10 @@ while True:
             break  # Exit the loop when age is valid
         elif age == "":
             print('You must enter an age to continue playing')
+            continue
         elif age == "twelve, thirteen, fourteen, fifeteen, sixteen, seventeen, eighteen, nineteen":
-            
-            
-            
-
+            print('You must only enter numbers and not words for this question')
+            continue
         else:
             print('You must be older than 12 and younger than 20')
     except ValueError:
