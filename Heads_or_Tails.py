@@ -10,6 +10,7 @@ def heads_tails():
     user_score=0
     computer_score=0
     options=["Heads","Tails"]
+    # this code detects who had won by whoever reach 2 points first
     while user_score!=2 and computer_score!=2:
         choice=random.randint(0,1)
         computer_guess=options[choice]
@@ -36,7 +37,7 @@ while True:
         print(f"welcome {first_name}")
         break
     # this checks for any symbols in the user's name
-    if first_name_input.isdigit():
+    elif first_name_input.isdigit():
         print('No symbols should be in your name')
 
     else:
@@ -56,11 +57,11 @@ while True:
             print('You must enter an age to continue playing')
             continue
         # prevents the user from entering a word as their age and then asks them for a number
-        if age_input.isalpha():
+        elif age_input.isalpha():
             print('You must only enter numbers and not words for this question')
             continue
         # this checks if the user checks if they have symbols in their age
-        if age_input.isdigit():
+        elif age_input.isdigit():
             print('No symbols should be in side the age')
         else:
             print('You must be older than 12 and younger than 20')
